@@ -1,7 +1,7 @@
 ### `Movie HBO Max`
 -Print da Tela:
 
-![](./.github/apituraweb.jpeg)
+![](./.github/capituraweb.jpeg)
 
 ---
 
