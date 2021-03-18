@@ -1,3 +1,17 @@
+::-webkit-scrollbar {
+    width: 1.500ex;      
+ }
+  
+ ::-webkit-scrollbar-thumb {   
+   border-radius: 40px;
+   width: 7px;
+   background-color: rgba(157, 133, 255, 0.5);
+ }  
+ ::-webkit-scrollbar-track {     
+   background: #030328;
+ }
+ 
+
 * {
     margin: 0;
     padding: 0;
@@ -10,84 +24,249 @@ body {
     align-items: center;
 
     background-color: #030328;
+    font-family: 'Roboto', sans-serif;
+}
+
+main img {
+    margin-bottom: 5mm;
+
+    cursor: pointer;
+
+    box-shadow: 8px 2px 10px rgba(69, 55, 119, 0.7);
 }
 
 header {
-    width: 98.500vw;
-    height: 80vh;
-
+    width: 99.100vw;
+    height: 87vh;
     background: url("./assets/barry_allen_the_flash_hd-1920x1080.jpg");
     background-position: top;
     background-size: 100%;
-
-    margin-top: -1;
+    margin-top: 0;
+    cursor: pointer;
 }
 header .App-top {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0.1mm 0.100rem;
+    margin: 0mm 0rem;
 }
-
 header .App-top .one_img img {
-    width: 2rem;
-
+    width: 1.700rem;
+    margin-left: 3mm;
     filter: blur(0.500px);
     filter: invert(1);
 }
 header .App-top .one_img img:last-child {
-    margin-left: 1rem;
-
+    margin-left: .600rem;
     filter: blur(1px);
 }
 .App-top #logo {
-    width: 300pt;
-
+    width: 200pt;
     margin-top: 4mm;
 }
 .App-top #profile {
-    width: 50pt;
-
+    width: 2.300rem;
     border-radius: 50%;
     margin-top: 4mm;
+    margin-right: 1.100rem;
 }
 
 main {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    background: rgb(3,3,40);
+    background: linear-gradient(0deg, #030328 60%, rgba(157, 133, 255, 0.3) 90%);
+    color: rgba(157, 133, 255, 0.9) ;
+
+    margin-left: -1mm;
+    margin-top: 0.100mm;
+
+    width: 99.100vw;
+}
+main .one {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3mm;
+    margin-top: 7mm;
+}
+main .one h1 {
+    margin-left: 15pt;
+}
+.one .imgs {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    width: 97vw;
+    margin-top: 0.100in;
+}
+.one .imgs img {
+    margin-left: 1rem;
+}
+
+/* % Parte Dois  %  */
+main .two {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 6mm;
+}
+main .two h1 {
+    margin-left: 15pt;
+}
+.two .imgs {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    width: 97vw;
+    margin-top: 0.100in;
+}
+.two .imgs img {
+    margin-left: 1rem;
+}
+
+/* % Parte tres % */
+
+main .tree {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 6mm;
+}
+main .tree h1 {
+    margin-left: 15pt;
+}
+.tree .imgs {
+    display: flex;
+
+    align-items: center;
 
     overflow-x: scroll;
 
-    background: rgb(3,3,40);
-    background: linear-gradient(0deg, #030328 50%, rgba(157, 133, 255, 0.2) 70%);
+    width: 97vw;
+    margin-top: 0.100in;
+}
+.tree .imgs img {
+    margin-left: 1rem;
+}
 
-    height: 15rem;
+.cartaz {
+    display: flex;
+    align-items: center;
+
+    background: rgba(157, 133, 255, 0.5);
+
+    height: 3in;
     width: 100%;
-    margin-top: -10mm;
+    margin-top: 6rem;
 }
-main::-webkit-scrollbar {
-    width: 1px;      
- }
- ::-webkit-scrollbar-track {     
+.cartaz .card {
+    border: solid 3px rgba(157, 133, 255, 1);
+    margin-left: 3rem;
+
+    width: 7in;
+    height: 10cm;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+.card h2 {
+    color: white;
     background: #030328;
-  }
-  ::-webkit-scrollbar-thumb {   
-    border-radius: 3px;
-    width: 1px;
-    background-color:rgba(157, 133, 255, 0.2);
-  }
-main img {
-    margin-left: 1mm;
+
+    margin-top: -4mm ;
+
+    width: 3in;
+}
+.card img {
+    width: 5in;
+
+    margin-top: 4ch;
+}
+.cartaz .text {
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+
+    margin-left: 15mm;
+}
+.cartaz .text h3 {
+    background: transparent;
+    width: 30pc;
+
+    margin-bottom: 10mm;
+
+    font-size: 1.600rem;
+    font-weight: 300;
+}
+.cartaz .text h1 {
+    font-size: 2rem;
+
+    width: 30pc;
 }
 
-@media(max-width: 600px) {
+.canal {
+    margin-top: 5pc;
+}
+.canal img {
+    width: 2in;
+
+    margin-right: 5ch;
+    margin-left: 1mm;
+
+    box-shadow: none;
+
+    transition: 1s;
+}
+.canal img:hover {
+    background-color: black;
+
+    border-radius: 30%;
+}
+.canal #cartoon {
+    width: 24ex;
+}
+#roll {
+    width: 24ex;
+}
+#dcun {
+    width: 24ex;
+}
+#wb {
+    width: 24ex;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(157, 133, 255, 0.3);
+    width: 98vw;
+}
+footer img {
+    width: 2in;
+    margin-top: 2ex;
+    margin-bottom: 2ex;
+}
+footer small {
+    margin-bottom: 3ex;
+}
+
+
+@media(max-width: 1100px) {
     header {
         background-repeat: no-repeat;
         background-position-x: -1px;
         
         width: 99vw;
-
+        
         margin-left: 0px;
     }
     header .App-top {
@@ -107,11 +286,91 @@ main img {
     }
 
     main {
-        margin-top: -55vmax;
+        margin-top: -30ex;
 
         background: linear-gradient(0deg, #030335 40%, rgba(157, 133, 255, 0.7) 90%);
-    
+        
         height: 35ex;
         width: 100%;
+    }
+
+    .cartaz {
+        display: flex;
+        flex-direction: column;
+
+        font-size: 10pt;
+
+        width: 99vw;
+    }
+    .cartaz .card {
+        width: 85vw;
+        margin-bottom: 10mm;
+    }
+    .cartaz .card img {
+        width: 50%;
+    }
+    .cartaz .text h3{
+        font-size: 20pt;
+    }
+    .cartaz .text h1 {
+        font-size: 16pt;
+    }
+    .canal {
+        margin-top: 15rem;
+        width: 90vw;
+
+        display: grid;
+        margin-right: 0;
+        grid-template-columns: 4cm 15cm;
+
+        align-items: center;
+    }
+    .canal img {
+        width: 2in;
+
+        margin: 0;
+    }
+    footer {
+        margin-top: 45cm;
+    }
+   
+    @media(max-width: 500px) {
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            object-position: center;
+            max-width: 100vw;
+        }
+        header {
+            width: 100vw;
+            background-position: initial;
+            background-size: 100%;
+        }
+        main {
+            margin-top: calc(-90rem / 3.600);
+            width: 100%;
+        }
+        .cartaz .card {
+            width: 100%;
+            margin: 0;
+            margin-top: 11mm;
+        }
+        .cartaz .text {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .cartaz .text h3{
+            font-size: 20px;
+            width: 80mm;
+        }
+        .cartaz .text h1 {
+            font-size: 22px;
+            width: 80mm;
+        }
+        .canal {
+            align-items: center;
+        }
     }
 }
