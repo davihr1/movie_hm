@@ -32,13 +32,13 @@ main img {
 
     cursor: pointer;
 
-    box-shadow: 8px 2px 10px rgba(69, 55, 119, 0.7);
+    box-shadow: 8px 13px 7px rgba(0, 0,0, .8);
 }
 
 header {
     width: 99.100vw;
     height: 87vh;
-    background: url("./assets/barry_allen_the_flash_hd-1920x1080.jpg");
+    background: url("https://image.tmdb.org/t/p/w1280/wAEWZm2pSopAbqE5dQWE0ET8aR5.jpg");
     background-position: top;
     background-size: 100%;
     margin-top: 0;
@@ -50,6 +50,9 @@ header .App-top {
     flex-direction: row;
     justify-content: space-between;
     margin: 0mm 0rem;
+}
+header .App-top {
+    cursor: auto;
 }
 header .App-top .one_img img {
     width: 1.700rem;
@@ -79,10 +82,8 @@ main {
     background: rgb(3,3,40);
     background: linear-gradient(0deg, #030328 60%, rgba(157, 133, 255, 0.3) 90%);
     color: rgba(157, 133, 255, 0.9) ;
-
     margin-left: -1mm;
     margin-top: 0.100mm;
-
     width: 99.100vw;
 }
 main .one {
@@ -102,7 +103,8 @@ main .one h1 {
     margin-top: 0.100in;
 }
 .one .imgs img {
-    margin-left: 1rem;
+    margin-left: 1.200rem;
+    border-radius: 1ch;
 }
 
 /* % Parte Dois  %  */
@@ -124,6 +126,7 @@ main .two h1 {
 }
 .two .imgs img {
     margin-left: 1rem;
+    border-radius: 1ch;
 }
 
 /* % Parte tres % */
@@ -149,6 +152,7 @@ main .tree h1 {
 }
 .tree .imgs img {
     margin-left: 1rem;
+    border-radius: 1ch;
 }
 
 .cartaz {

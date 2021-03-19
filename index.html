@@ -27,19 +27,20 @@
 
     <main>
         <div class="one">
-            <h1>Lançamento</h1>
+            <h1>LANÇAMENTO</h1>
 
             <div class="imgs">
-                <img src="https://hbomax-images.warnermediacdn.com/images/GXcWsXwq07ZuAuwEAAACT/tileburnedin?size=320x180&format=jpeg&partner=hbomaxcom&productCode=hbomax&host=artist.api.cdn.hbo.com&w=320" alt="img" />
-                <img src="https://hbomax-images.warnermediacdn.com/images/GXvuNTw6T2IaEUwEAAAT-/tileburnedin?size=320x180&format=jpeg&partner=hbomaxcom&productCode=hbomax&host=artist.api.cdn.hbo.com&w=320" alt="img" />
+                <img src="https://image.tmdb.org/t/p/w1280/6ZdQTBy20HzWudZthAV7NkZWfIb.jpg" alt="img" width="320" />
+                <!-- <img src="https://hbomax-images.warnermediacdn.com/images/GXvuNTw6T2IaEUwEAAAT-/tileburnedin?size=320x180&format=jpeg&partner=hbomaxcom&productCode=hbomax&host=artist.api.cdn.hbo.com&w=320" alt="img" /> -->
+                <img src="https://th.bing.com/th/id/OIP.q9J6FaTcNnfNFyB2ev0mAAHaD7?w=335&h=177&c=7&o=5&pid=1.7" alt="disney" onclick="window.open('https://firebasestorage.googleapis.com/v0/b/starplus-e20cd.appspot.com/o/falcao%20e%20soldado%20invernal%2Ffalcaoeosoldadoinvernal-temo01ep01.mp4?alt=media&token=6a1e0e27-dadd-4248-b4a2-f65ce000e0f9')"/>
                 <img src="https://hbomax-images.warnermediacdn.com/images/GXnEEoQ4sRMNVoAEAAB0c/tileburnedin?size=320x180&format=jpeg&partner=hbomaxcom&productCode=hbomax&host=artist.api.cdn.hbo.com&w=320" alt="img" />
                 <img src="https://hbomax-images.warnermediacdn.com/images/GXdu2ZAglVJuAuwEAADbA/tileburnedin?size=320x180&format=jpeg&partner=hbomaxcom&productCode=hbomax&host=artist.api.cdn.hbo.com&w=320" alt="img" />
-                <img src="https://hbomax-images.warnermediacdn.com/images/GXadUQAL-FZaVkgEAAAKm/tileburnedin?size=320x180&format=jpeg&partner=hbomaxcom&productCode=hbomax&host=artist.api.cdn.hbo.com&w=320" alt="img" />
+                <img src="https://image.tmdb.org/t/p/w1280/mmprryb2r0X8u9JkZCnaJIzyYX4.jpg" alt="img" width="320"/>
             </div>
         </div>
 
         <div class="two">
-            <h1>Hbo</h1>
+            <h1>HBO</h1>
 
             <div class="imgs">
                 <img src="https://hbomax-images.warnermediacdn.com/images/GXcWsXwq07ZuAuwEAAACT/tileburnedin?size=320x180&format=jpeg&partner=hbomaxcom&productCode=hbomax&host=artist.api.cdn.hbo.com&w=320" alt="img" />
@@ -50,10 +51,10 @@
             </div>
         </div>
         <div class="tree">
-            <h1>Infantil</h1>
+            <h1>INFANTIL</h1>
 
             <div class="imgs">
-                <img src="https://hbomax-images.warnermediacdn.com/images/GXcWsXwq07ZuAuwEAAACT/tileburnedin?size=320x180&format=jpeg&partner=hbomaxcom&productCode=hbomax&host=artist.api.cdn.hbo.com&w=320" alt="img" />
+                <img src="https://image.tmdb.org/t/p/w1280/9daKewVsUrEldMz4M2bTj3PQY2Y.jpg" alt="img" width="320"/>
                 <img src="https://hbomax-images.warnermediacdn.com/images/GXvuNTw6T2IaEUwEAAAT-/tileburnedin?size=320x180&format=jpeg&partner=hbomaxcom&productCode=hbomax&host=artist.api.cdn.hbo.com&w=320" alt="img" />
                 <img src="https://hbomax-images.warnermediacdn.com/images/GXnEEoQ4sRMNVoAEAAB0c/tileburnedin?size=320x180&format=jpeg&partner=hbomaxcom&productCode=hbomax&host=artist.api.cdn.hbo.com&w=320" alt="img" />
                 <img src="https://hbomax-images.warnermediacdn.com/images/GXdu2ZAglVJuAuwEAADbA/tileburnedin?size=320x180&format=jpeg&partner=hbomaxcom&productCode=hbomax&host=artist.api.cdn.hbo.com&w=320" alt="img" />
@@ -64,7 +65,7 @@
         <div class="cartaz">
             <div class="card">
                 <h2>COMING SOON</h2>
-                <img src="https://hbomax-images.warnermediacdn.com/2021-02/ZSJL_16x9_3.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=960" alt="card" />
+                <img src="https://hbomax-images.warnermediacdn.com/2021-02/ZSJL_16x9_3.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=960" alt="card" id="cartaz"/>
             </div>
 
             <div class="text">
@@ -92,5 +93,12 @@
 
         <small>©2021 WarnerMedia Direct, LLC. All Rights Reserved. HBO Max™ is used under license.</small>
     </footer>
+
+    <script>
+        let play = document.getElementById('cartaz')
+        play.onmouseover = () => {
+            window.open('https://firebasestorage.googleapis.com/v0/b/starplus-e20cd.appspot.com/o/vandavision%2Fwandavision-temp01ep9.mp4?alt=media&token=9c568935-1875-447b-bb48-8755201654e4')
+        }
+    </script>
 </body>
 </html>
