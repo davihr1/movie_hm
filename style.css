@@ -38,7 +38,7 @@ main img {
 header {
     width: 99.100vw;
     height: 87vh;
-    background: url("https://image.tmdb.org/t/p/w1280/wAEWZm2pSopAbqE5dQWE0ET8aR5.jpg");
+    background: url("https://image.tmdb.org/t/p/w1280/jqnbac3oind5VOcAN0mTXyapOGh.jpg");
     background-position: top;
     background-size: 100%;
     margin-top: 0;
@@ -73,6 +73,16 @@ header .App-top .one_img img:last-child {
     border-radius: 50%;
     margin-top: 4mm;
     margin-right: 1.100rem;
+}
+header .App-logo {
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+.App-logo img {
+    width: 16rem;
+
+    border-radius: 4px;
+    box-shadow: 26px 20px 40px black;
 }
 
 main {
@@ -243,6 +253,27 @@ main .tree h1 {
 }
 #wb {
     width: 24ex;
+}
+
+main .four {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2cm;
+    margin-top: 7mm;
+}
+main .four h1 {
+    margin-left: 15pt;
+}
+.four .imgs {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    width: 97vw;
+    margin-top: 0.100in;
+}
+.four .imgs img {
+    margin-left: 1.200rem;
+    border-radius: 1ch;
 }
 
 footer {
